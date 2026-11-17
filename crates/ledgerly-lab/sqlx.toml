@@ -1,0 +1,12 @@
+# SQLx 0.9 configuration. The macros and sqlx-cli read this from the crate
+# root (CARGO_MANIFEST_DIR). The runtime query API used in most chapters is
+# unaffected by it; Chapter 13 exercises this file directly.
+# Reference: sqlx-core 0.9.0 `src/config/reference.toml`.
+
+[common]
+database-url-var = "DATABASE_URL"
+
+[drivers.postgres]
+
+[macros.preferred-crates]
+date-time = "chrono"
